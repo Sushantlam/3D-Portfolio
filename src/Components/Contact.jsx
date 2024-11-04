@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
-import useAlert from "../hooks/useAlert.jsx";
+import useAlert from "../Hooks/useAlert.jsx";
 import Alert from "../ThreeD/Alert.jsx";
 
 const Contact = () => {
