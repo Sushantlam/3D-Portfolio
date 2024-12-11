@@ -7,6 +7,104 @@ import DemoComputer from '../ThreeD/Democomputer';
 
 const Projects = () => {
     const myProjects = [
+      {
+        title: 'Naikap Village Resort (Room Booking Site)',
+        desc: 'Naikap Village Resort is a hidden gem nestled in the beautiful hills of Nepal. The resort offers a peaceful and serene atmosphere, perfect for those seeking a break from the hustle and bustle of city life.',
+        subdesc:
+          'Naikap Village Resort is the perfect destination for anyone seeking a peaceful and rejuvenating experience in the heart of Nepal.',
+        href: 'https://naikap-village-resort-frontend.vercel.app/',
+        texture: '/image/project2.png',
+        logo: '/assets/project-logo2.png',
+        logoStyle: {
+          backgroundColor: '#13202F',
+          border: '0.2px solid #17293E',
+          boxShadow: '0px 0px 60px 0px #2F6DB54D',
+        },
+        spotlight: '/assets/spotlight2.png',
+        tags: [
+          {
+            id: 1,
+            name: 'React.js',
+            path: '/assets/react.svg',
+          },
+          {
+            id: 2,
+            name: 'TailwindCSS',
+            path: 'assets/tailwindcss.png',
+          },
+          {
+            id: 3,
+            name: 'Node JS',
+            path: '/assets/node.png',
+          },
+        ],
+      },
+      {
+        title: 'Ride Sharing App',
+        desc: 'Ride-sharing is a service that connects passengers with drivers of vehicles for hire through mobile apps and websites.',
+        subdesc:
+          'Ride-sharing is often used as an umbrella term for all on-demand mobility solutions, but the correct term is shared transport or shared mobility.',
+        href: 'https://github.com/Sushantlam/Gantabya-Group-Project',
+        texture: '/image/project3.png',
+        logo: '/assets/project-logo3.png',
+        logoStyle: {
+          backgroundColor: '#60f5a1',
+          background:
+            'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+          border: '0.2px solid rgba(208, 213, 221, 1)',
+          boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+        },
+        spotlight: '/assets/spotlight3.png',
+        tags: [
+          {
+            id: 1,
+            name: 'React.js',
+            path: '/assets/react.svg',
+          },
+          {
+            id: 2,
+            name: 'CSS',
+            path: 'assets/CSS.png',
+          },
+          {
+            id: 3,
+            name: 'Node JS',
+            path: '/assets/node.png',
+          },
+        ],
+      },
+      {
+        title: 'Animated Website',
+        desc: 'Built using react, gsap animation for the attractive of websites, its generally built for the learning purpose of gsap animation which include responsivness too.',
+        subdesc:
+          'Built with modern tools like React and Tailwind CSS, ensuring fast, responsive, and beautiful interfaces.',
+        href: 'https://gsap-animation-xi.vercel.app/',
+        texture: '/image/project4.png',
+        logo: '/assets/project-logo4.png',
+        logoStyle: {
+          backgroundColor: '#0E1F38',
+          border: '0.2px solid #0E2D58',
+          boxShadow: '0px 0px 60px 0px #2F67B64D',
+        },
+        spotlight: '/assets/spotlight4.png',
+        tags: [
+          {
+            id: 1,
+            name: 'React.js',
+            path: '/assets/react.svg',
+          },
+          {
+            id: 2,
+            name: 'TailwindCSS',
+            path: 'assets/tailwindcss.png',
+          },
+          {
+            id: 3,
+            name: 'GSAP',
+            path: '/assets/GSAP.jpeg',
+          },
+        ],
+      },
         {
           title: 'Canteen Management System',
           desc: 'A canteen management system is a software solution that helps organizations automate and streamline their canteen operations. These systems can be used to manage tasks.',
@@ -44,104 +142,7 @@ const Projects = () => {
             },
           ],
         },
-        {
-          title: 'Naikap Village Resort (Room Booking Site)',
-          desc: 'Naikap Village Resort is a hidden gem nestled in the beautiful hills of Nepal. The resort offers a peaceful and serene atmosphere, perfect for those seeking a break from the hustle and bustle of city life.',
-          subdesc:
-            'Naikap Village Resort is the perfect destination for anyone seeking a peaceful and rejuvenating experience in the heart of Nepal.',
-          href: 'https://naikap-village-resort-frontend.vercel.app/',
-          texture: '/image/project2.png',
-          logo: '/assets/project-logo2.png',
-          logoStyle: {
-            backgroundColor: '#13202F',
-            border: '0.2px solid #17293E',
-            boxShadow: '0px 0px 60px 0px #2F6DB54D',
-          },
-          spotlight: '/assets/spotlight2.png',
-          tags: [
-            {
-              id: 1,
-              name: 'React.js',
-              path: '/assets/react.svg',
-            },
-            {
-              id: 2,
-              name: 'TailwindCSS',
-              path: 'assets/tailwindcss.png',
-            },
-            {
-              id: 3,
-              name: 'Node JS',
-              path: '/assets/node.png',
-            },
-          ],
-        },
-        {
-          title: 'Ride Sharing App',
-          desc: 'Ride-sharing is a service that connects passengers with drivers of vehicles for hire through mobile apps and websites.',
-          subdesc:
-            'Ride-sharing is often used as an umbrella term for all on-demand mobility solutions, but the correct term is shared transport or shared mobility.',
-          href: 'https://github.com/Sushantlam/Gantabya-Group-Project',
-          texture: '/image/project3.png',
-          logo: '/assets/project-logo3.png',
-          logoStyle: {
-            backgroundColor: '#60f5a1',
-            background:
-              'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-            border: '0.2px solid rgba(208, 213, 221, 1)',
-            boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-          },
-          spotlight: '/assets/spotlight3.png',
-          tags: [
-            {
-              id: 1,
-              name: 'React.js',
-              path: '/assets/react.svg',
-            },
-            {
-              id: 2,
-              name: 'CSS',
-              path: 'assets/CSS.png',
-            },
-            {
-              id: 3,
-              name: 'Node JS',
-              path: '/assets/node.png',
-            },
-          ],
-        },
-        {
-          title: 'Animated Website',
-          desc: 'Built using react, gsap animation for the attractive of websites, its generally built for the learning purpose of gsap animation which include responsivness too.',
-          subdesc:
-            'Built with modern tools like React and Tailwind CSS, ensuring fast, responsive, and beautiful interfaces.',
-          href: 'https://gsap-animation-xi.vercel.app/',
-          texture: '/image/project4.png',
-          logo: '/assets/project-logo4.png',
-          logoStyle: {
-            backgroundColor: '#0E1F38',
-            border: '0.2px solid #0E2D58',
-            boxShadow: '0px 0px 60px 0px #2F67B64D',
-          },
-          spotlight: '/assets/spotlight4.png',
-          tags: [
-            {
-              id: 1,
-              name: 'React.js',
-              path: '/assets/react.svg',
-            },
-            {
-              id: 2,
-              name: 'TailwindCSS',
-              path: 'assets/tailwindcss.png',
-            },
-            {
-              id: 3,
-              name: 'GSAP',
-              path: '/assets/GSAP.jpeg',
-            },
-          ],
-        },
+       
       ];
     const projectCount = myProjects.length;
 
