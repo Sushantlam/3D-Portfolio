@@ -1,25 +1,36 @@
-import { useGSAP } from '@gsap/react'
 import { useGLTF } from '@react-three/drei'
 import React, { useRef } from 'react'
 import gsap from "gsap";
 
 const Earth = (props) => {
-    const targetRef = useRef()
-    const { scene } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf')
-    useGSAP(() => {
-        gsap.to(targetRef.current.position, {
-          y: targetRef.current.position.y + 0.5,
-          duration: 1.5,
-          repeat: -1,
-          yoyo: true,
-        });
+  const targetRef = useRef()
+  let scene = null;
+
+  try {
+    const gltf = useGLTF('/models/target-stand/model.gltf') 
+    scene = gltf.scene
+  } catch (err) {
+    console.error("GLTF model failed to load:", err)
+  }
+
+  React.useEffect(() => {
+    if (targetRef.current) {
+      gsap.to(targetRef.current.position, {
+        y: targetRef.current.position.y + 0.5,
+        duration: 1.5,
+        repeat: -1,
+        yoyo: true,
       });
-    
-      return (
-        <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={1.5}>
-          <primitive object={scene} />
-        </mesh>
-      );
-    };
-    
-export default Earth
+    }
+  }, []);
+
+  if (!scene) return null; 
+
+  return (
+    <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={1.5}>
+      <primitive object={scene} />
+    </mesh>
+  );
+};
+
+export default Earth;
